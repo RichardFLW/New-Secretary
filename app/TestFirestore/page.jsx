@@ -1,6 +1,6 @@
 "use client"
 
-// app/TestFirestore.js (ou pages/TestFirestore.js)
+// app/TestFirestore/page.jsx
 import { useState } from "react";
 import { db } from "../../config/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
@@ -12,7 +12,7 @@ export default function TestFirestore() {
   const handleAddUser = async () => {
     try {
       const docRef = await addDoc(collection(db, "users"), {
-        name: name,
+        name,
         age: parseInt(age),
       });
       alert("Document written with ID: " + docRef.id);
