@@ -2,3 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --background-color: #ffffff;
+  --primary-color: #583ebc;
+  --dark-bg-color: #22212a;
+  --dark-secondary-bg-color: #191720;
+  --dark-primary-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-primary-color);
+  }
+  .secondary-bg {
+    background-color: var(--dark-secondary-bg-color);
+  }
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--dark-primary-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.dark-section {
+  background-color: var(--dark-secondary-bg-color);
+  color: var(--dark-primary-color);
+}
