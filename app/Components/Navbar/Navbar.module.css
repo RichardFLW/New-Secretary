@@ -1,21 +1,16 @@
-/* app/components/Navbar.module.css */
-
 .navbar {
   background-color: #583ebc;
   padding: 0.8rem;
   border-radius: 9999px;
-  margin: 0 1rem;
+  margin: 2rem auto; /* Centré horizontalement avec une marge supérieure */
   max-width: 70%;
-  margin: 2rem 1rem; 
-  margin-left: 15%;
-  
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 3000px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -33,12 +28,12 @@
   width: 160px;
   height: 48px;
   font-weight: bold;
+  margin-left: 0; /* Enlever la marge à gauche */
 }
 
 .links {
   display: flex;
   align-items: center;
-  
 }
 
 .desktopLinks {
@@ -69,20 +64,12 @@
   align-items: center;
 }
 
-.link {
-  color: white;
-  margin-left: 1rem;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
 .link:hover {
   color: #d1d5db;
 }
 
 .icon {
   color: white;
-  margin-left: 1rem;
   cursor: pointer;
   transition: color 0.3s;
   margin-right: 25px;
@@ -91,15 +78,6 @@
 
 .icon:hover {
   color: #d1d5db;
-}
-
-.homeLink {
-  background-color: white;
-  color: black;
-  border-radius: 9999px;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
 }
 
 .mobileMenuButton {
@@ -128,12 +106,3 @@
   flex-direction: column;
   margin-top: 1rem;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  .navbar {
-    background-color: var(--dark-bg-color);
-  }
-  .link, .icon {
-    color: var(--dark-primary-color);
-  }
-} */

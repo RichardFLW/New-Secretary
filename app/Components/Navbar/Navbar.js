@@ -1,3 +1,4 @@
+// Components/Navbar/Navbar.js
 "use client";
 
 import Link from "next/link";
@@ -16,12 +17,10 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        {/* Left Side - Logo */}
         <Link href="/" className={styles.logo}>
           <span style={{ fontWeight: "bold" }}>MH Secretary</span>
         </Link>
 
-        {/* Right Side - Links */}
         <div className={`${styles.links} ${styles.desktopLinks}`}>
           <ul className={styles.linkList}>
             <li>
@@ -52,7 +51,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Mobile Menu Button */}
         <button className={styles.mobileMenuButton} onClick={handleMenuToggle}>
           {isMenuOpen ? (
             <FaTimes className={styles.icon} />
@@ -61,7 +59,6 @@ const Navbar = () => {
           )}
         </button>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className={styles.mobileLinks}>
             <ul className={styles.mobileLinkList}>

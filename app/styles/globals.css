@@ -15,6 +15,8 @@ body {
   background-color: var(--background-color);
   color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
+  background-color: #f7fafc;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,6 +25,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
