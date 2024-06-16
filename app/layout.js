@@ -1,6 +1,8 @@
 // app/layout.js
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Poppins, Roboto } from "next/font/google";
-import Navbar from "../app/Components/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import "../app/styles/globals.css"; // Import correct des styles globaux
 
 const poppins = Poppins({
@@ -21,6 +23,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

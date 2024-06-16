@@ -5,9 +5,9 @@
   padding: 0.8rem;
   border-radius: 9999px;
   margin: 0 1rem;
-  max-width: 90%;
+  max-width: 70%;
   margin: 2rem 1rem; 
-  margin-left: 5%;
+  margin-left: 15%;
   
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
+  max-width: 3000px;
   margin: 0 auto;
 }
 
@@ -38,6 +38,7 @@
 .links {
   display: flex;
   align-items: center;
+  
 }
 
 .desktopLinks {
@@ -84,6 +85,8 @@
   margin-left: 1rem;
   cursor: pointer;
   transition: color 0.3s;
+  margin-right: 25px;
+  font-size: x-large;
 }
 
 .icon:hover {
@@ -102,6 +105,8 @@
 .mobileMenuButton {
   display: flex;
   align-items: center;
+  margin-right: 20px;
+  font-size: x-large;
 }
 
 .mobileLinks {
@@ -124,11 +129,11 @@
   margin-top: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .navbar {
     background-color: var(--dark-bg-color);
   }
   .link, .icon {
     color: var(--dark-primary-color);
   }
-}
+} */
