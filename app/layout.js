@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
